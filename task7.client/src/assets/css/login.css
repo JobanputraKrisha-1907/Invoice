@@ -1,0 +1,335 @@
+* {
+  font-family: "Poppins",sans-serif !important;
+}
+
+body {
+  font-family: "Poppins",sans-serif !important;
+}
+
+.col-6 {
+  padding: 0 !important
+}
+
+.login-section {
+  background-image: url('../img/img1.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 32px 0;
+}
+
+.pt_login {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.bggrey {
+  position: relative;
+  z-index: 1;
+}
+
+.height550px {
+  height: 550px !important;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+
+.p {
+  text-align: center;
+  color: grey;
+  font-size: 9.5px;
+  text-indent: 15px;
+}
+
+.signup_section {
+  padding: 60px 0;
+  background: #f1f1f1;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.signin_section {
+  padding-top: 50px;
+  background: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.signin_heading_content {
+  color: #333;
+  font-size: 19px;
+  margin-bottom: 0;
+  font-weight: 200;
+}
+
+
+.signup_heading {
+  color: #163c81;
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+h2.investor_num {
+  font-size: 25px !important;
+  font-weight: 300;
+  color: #333
+}
+
+.color-orange {
+  font-weight: 700;
+  color: #ee6c1f;
+  font-size: 45px;
+}
+
+  .color-orange.weight_orange {
+    font-weight: 400;
+  }
+
+.join_btn {
+  background-color: #163c81;
+  margin-top: 25px;
+  width: auto;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  width: 150px;
+}
+
+.join_btn_content {
+  color: #333;
+  font-size: 19px;
+  margin-top: 40px;
+}
+
+.signin_heading {
+  color: #ee6c1f;
+  margin-bottom: 25px;
+}
+
+.txtbox {
+  height: 45px !important;
+  line-height: 45px !important;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  font-size: 14px;
+  transition: all .3s ease;
+  width: 52%;
+  padding: .7rem !important;
+  color: #495057;
+  background-color: #fff;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.forOpacity {
+  opacity: 0.5 !important
+}
+
+.singin_links {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.forgot_pass_link {
+  color: #163c81;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff7a29;
+}
+
+
+.otp_link {
+  color: #ff7a29;
+  text-decoration: none;
+  font-weight: 500;
+  background: #fff;
+  border: none;
+}
+ 
+.signin_btn {
+  background-color: #ff7a29;
+  background: #ee6c1f;
+  color: #fff;
+  width: 170px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  margin-top: 60px !important;
+}
+
+  .signin_btn:hover {
+    opacity: 0.7;
+  }
+
+.logotpin_btn {
+  background: #ee6c1f;
+  color: #fff;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  margin-top: 30px !important;
+}
+
+
+/*.signin_section {
+  background-image: url(login_new_bg_2.6ef4db0dfb46d3bc.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}*/
+/*.p{
+    text-align:center;
+    color:grey;
+    font-size:9.5px;
+    text-indent:15px;
+}
+
+.grid{
+    display:flex;
+}
+
+.sec_login {
+  margin: 35px 110px;
+  position: absolute;
+  height: 550px;
+}
+
+.signup_heading {
+  color: #163c81;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.signin_heading_content {
+  color: #333;
+  font-size: 19px;
+  margin-bottom: 0;
+}
+
+
+
+h2.investor_num {
+
+  font-size: 25px !important;
+  font-weight: 300;
+  color:#333
+}
+
+.color-orange {
+  font-weight: 700;
+  color: #ee6c1f;
+  font-size:45px;
+}
+  .color-orange.weight_orange{
+      font-weight:400;
+  }
+
+
+
+.join_btn {
+  background-color: #163c81;
+  margin-top:25px;
+  width:auto;
+  color:white;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  font-weight:500;
+}
+
+.join_btn_content{
+    color:#333;
+    font-size:19px;
+    margin-top:40px;
+}
+
+.signup_section {
+  height: 100%;
+  padding: 60px 0;
+  background: #f1f1f1;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: auto;
+}
+
+
+.text-center{
+    text-align:center !important;
+}
+
+.signin_section {
+  padding-top: 50px;
+  background: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: auto;
+}
+
+.signin_heading {
+  color: #ee6c1f;
+  margin-bottom:25px;
+}
+
+.txtbox{
+    height:45px !important;
+    line-height:45px !important;
+    border:1px solid #ddd;
+    box-shadow:none;
+    font-size:14px;
+    transition:all .3s ease;
+    width:auto;
+    padding:.7rem !important;
+    color:#495097;
+    background-color:#fff;
+    font-size:15px;
+    outline:none;
+    margin-top:1rem;
+}
+
+.for_opacity{
+    opacity:0.5 !important;
+}
+
+a:hover{
+    color:#ff7a29;
+}
+
+.signin_btn{
+    background-color:#ff7a29;
+    background:#ee6c1f;
+    color:#fff;
+    width:auto;
+    border:none;
+    border-radius:5px;
+    outline:none;
+    padding:10px;
+    margin-top:60px !important;
+}
+
+.signin_btn:hover{
+    opacity:0.7;
+}
+
+
+
+
+
+*/

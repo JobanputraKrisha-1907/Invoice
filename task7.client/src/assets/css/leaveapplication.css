@@ -1,0 +1,17 @@
+.leave-section {
+  background-color: #163c81;
+  color: white;
+  padding-top:30px;
+  padding-bottom:60px;
+  position:relative;
+}
+.for-flex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* margin-top: 15px;*/
+}
+.leave-form{
+    position:absolute;
+   color:black;
+}

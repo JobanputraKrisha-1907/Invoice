@@ -1,0 +1,159 @@
+/*body {
+}
+.gfg {
+  height: 50px;
+  width: 50px;
+}
+
+.mynav {
+  color: #fff;
+}
+
+  .mynav li a {
+    color: #fff !important;
+    text-decoration: none !important;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 5px;
+  }
+
+    .mynav li a.active {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .mynav li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .mynav li a i {
+      width: 25px;
+      text-align: center;
+    }
+
+.notification-badge {
+  background-color: rgba(255, 255, 255, 0.7);
+  float: right;
+  color: #222;
+  font-size: 14px;
+  padding: 0px 8px;
+  border-radius: 2px;
+}*/
+/*.main-content {
+  display: flex;
+}
+
+  .main-content .c-left {*/
+    /*width: 15%;*/
+    /*display: flex;
+    background: #163c81;
+    align-items: start;
+    justify-content: center;
+    height: auto;
+    color:white;
+  }
+
+    .main-content .c-left .navbar-nav {
+      width: 70%;
+    }
+
+  .main-content .c-right {*/
+    /*width: 85%;*/
+    /*height: auto;
+  }*/
+/*html, body {
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}*/
+/*.gfg {
+  height: 50px;
+  width: 50px;
+}
+.nav-color {
+  background-color: #163c81 !important;
+
+}
+
+.mynav {
+  color: black;
+  height:800px;
+}
+  .mynav li a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 5px;
+  }
+    .mynav li a.active {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .mynav li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .mynav li a i {
+      width: 25px;
+      text-align: center;
+    }
+.notification-badge {
+  background-color: rgba(255, 255, 255, 0.7);
+  float: right;
+  color: #222;
+  font-size: 14px;
+  padding: 0px 8px;
+  border-radius: 2px;
+}*/
+
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding-top: 40px;
+  display: block;
+  background-color: #343a40; /* Dark background color */
+  background-image: linear-gradient(rgba(22, 22, 22, 0.8), rgba(83, 148, 233, 0.6)); /* Background image with gradient overlay */
+  background-size: cover;
+}
+
+  .sidebar h2 {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Custom font */
+    font-size: 24px; /* Larger font size */
+    color: #fff; /* White text color */
+  }
+
+  .sidebar ul.components {
+    padding: 20px;
+  }
+
+    .sidebar ul.components li {
+      padding: 10px 0;
+    }
+
+      .sidebar ul.components li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px; /* Larger font size */
+      }
+
+        .sidebar ul.components li a:hover {
+          color: #17a2b8;
+        }
+
+.logout {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 22px;
+}
+
+.content {
+  padding: 20px;
+}
+

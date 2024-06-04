@@ -1,0 +1,141 @@
+<div class="container">
+  <h1>Invoice Info</h1>
+
+    <div class="mt-4">
+
+      <div class="row mt-2">
+        <div class="col-3">
+          <h4>Bill To:</h4>
+        </div>
+
+
+        <div class="col-3">
+          <select class="form-control" name="cust" #cust="ngModel" [(ngModel)]="invoicecustomer"
+                  (change)="generateInvoiceNumber()" required>
+<!--ok()-->
+<option value="" selected disabled> Customer Name</option>
+  <option *ngFor="let data of customer" value="{{data.Customer_Name}}">{{data.Customer_Name}}</option>
+</select>
+<!--<p *ngIf="cuflag" class="text-danger ml-1"> Customer Name Is Required !</p>-->
+</div>
+</div>
+
+
+<div class="row mt-2">
+  <div class="col-3">
+    <h4>Invoice #:</h4>
+  </div>
+  <div class="col-3">
+    <input type="text" class="form-control" name="num" #num="ngModel" readonly [(ngModel)]="invoicenumber" />
+  </div>
+</div>
+
+
+<div class="row mt-2">
+  <div class="col-3">
+    <h4>Invoice Date:</h4>
+  </div>
+  <div class="col-3">
+    <input type="date" class="form-control" name="date" #date="ngModel" [(ngModel)]="invoicedate"  required />
+<!--<div *ngIf="(invoicefrm.submitted && date.errors?. ['required']) ||(date.errors?.['required'] && date.touched)" class="text-danger">
+  Date is required..-->
+<!--</div>-->
+</div>
+</div>
+
+
+<div class="mt-4">
+  <h4>Invoice Details</h4>
+</div>
+
+
+<table class="table mt-3">
+
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col">Qty</th>
+      <th scope="col">Tax(%)</th>
+      <th scope="col">Total</th>
+      <th scope="col">Action</th>
+      <td></td>
+    </tr>
+  </thead>
+
+
+  <tbody id="ok">
+    <tr class="p-3" *ngFor="let row of tableArray ; let i = index">
+      <td>{{ row.id }}</td>
+
+      <td>
+        <select class="form-control" (change)="selectProduct(row, $any($event.target).value)" required>
+          <option class="p-4" value="-" selected disabled> Select Your Product </option>
+          <option class="p-4" *ngFor="let product of itemlist" [value]="product.productname" [disabled]="sele(product.productname)">
+            {{product.productname}}
+          </option>
+        </select>
+      </td>
+<td><input class="form-control" type="text" name="description" [(ngModel)]="row.description" readonly></td>
+<td><input class="form-control" type="text" name="description" [(ngModel)]="row.description" readonly></td>
+
+            <td><input class="form-control" type="number" min="0" name="price" [(ngModel)]="row.price" readonly></td>
+
+            <td>
+              <input class="form-control" type="number" min="0" name="Qty" [(ngModel)]="row.qty" (change)="qtyChange(row,$any($event.target).value)">
+            </td>
+
+            <td><input class="form-control" type="number" min="0" name="Tax" [(ngModel)]="row.tax" readonly></td>
+
+
+            <td> {{ row.total }}</td>
+
+            <td><button class="btn btn-danger" (click)="removeRow(i)"> delete</button></td>
+
+          </tr>
+
+          <tr>
+            <td colspan="7">
+              <div class="d-flex justify-content-end">
+                <button class=" btn btn-success" (click)="addRow()">Add New</button>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+      <div>
+        <div class="col-md-8 mt-3 order-md-3 order-sm-3">
+          <h5>Invoice Note:</h5>
+
+          <textarea class="form-control" cols="20" rows="3" maxlength="100" placeholder="Write your Note" [(ngModel)]="note"
+                    name="note" required></textarea>
+        </div>
+
+        <br />
+
+        <div class="col-md-4 order-md-4 order-sm-3 justify-content-end">
+          <div class="border p-2"><b>Sub Total:</b>{{subTotal}}</div>
+          <div class="border p-2"><b>Toatl tax:</b>{{TotalTax}}</div>
+          <div class="border p-2"><b>Grand Total:</b>{{GrandTotal}}</div>
+        </div>
+
+
+        <div class="text-center m-3">
+          <button class="btn btn-success" type="submit" (click)="save()">Save</button>
+          <button class="btn btn-danger" (click)="cancel()"> Cancel</button>
+        </div>
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!--Header Start-->
+<div class="container for-navbar-flex">
+  <div>
+    <img class="fund-logo" src="../../assets/img/Fundbazar_Logo.png" alt="FundzBazar logo" />
+  </div>
+</div>
+<!--Header End-->
+
+<!--Login Start-->
+<div class="login-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="row ">
+          <div class="col-sm-6 signup_section">
+            <div class="bggrey pr_login height550px">
+              <div class="txt-center">
+                <h2 class="signup_heading">Sign Up</h2>
+                <p class="signin_heading_content">
+                  Start Your Investment journey with Fundsbazar.<br />
+                  Sign Up & Join the Family of
+                </p>
+                <h2 class="investor_num">
+                  <span class="color-orange">1495700</span><br />
+                  <span class="color-orange weightOrnage">Happy Investors</span>
+                </h2>
+                <button class="join_btn" [routerLink]="['/registration']">JOIN NOW</button>
+                <p class="join_btn_content">
+                  A single Investment Account For <br />Mutual Fund, Stock Broking, Fixed Deposit,<br />
+                  NPS, Bond & More...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6  signin_section ">
+            <div class="bggrey pr_login height550px">
+              <div class="txt-center">
+                <h3 class="signin_heading">Sign Up</h3>
+                <div class="form" >
+                  <form #frmLogin="ngForm" method="post">
+
+                    <input class="txtbox" type="email" id="txtEmail" placeholder="Email Id" name="emailId"  pattern="^[a-zA-Z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-zA-Z]{2,}$" #emailId="ngModel" [(ngModel)]="UserEmailId" required />
+                    <div *ngIf="(frmLogin.submitted && emailId.errors?.['required'])||(emailId.errors?.['required'] && emailId.touched)" class="text-danger">Email is required...</div>
+                    <div *ngIf="emailId.errors?.['pattern']" class="text-danger">Enter Valid Email !!</div>
+
+                    <input class="txtbox" type="password" id="txtPassword" placeholder="Password" name="loginPassword" #loginPassword="ngModel" [(ngModel)]="UserPassword" required />
+                    <div *ngIf="(frmLogin.submitted && loginPassword.errors?.['required'])||(loginPassword.errors?.['required'] && loginPassword.touched)" class="text-danger">Password is required...</div>
+                    
+
+                    <div class="singin_links">
+                      <a class="forgot_pass_link">
+                        Forgot Password ?
+                      </a>
+                      <button class="otp_link">
+                        Login with OTP
+                      </button>
+                    </div>
+                    <button class="signin_btn" (click)="loginClient(frmLogin)">Login</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Login End-->
+
+<!--Footer Start-->
+<div class="container for-flex">
+  <div class="row">
+    <div class="col-lg-2 col-md-2 txt-center">
+      <img src="../../assets/img/prudent_footer_left_logo.png" alt="Prudent logo" />
+    </div>
+    <div class="col-lg-8 col-md-8">
+      <div class="mid-text">
+        <p class="mid-p-tag">
+          * Mutual Fund investments are subject to market risks.Please read all scheme related documents carefully,before investing.
+        </p>
+        <p class="mid-p-tag">
+          Prudent Corporate Advisory Services Ltd.(ARN-9992) makes no warranties or representations,express or implied,on products offered trough FundzBazar.com.It accepts no liability for any damages or loses,however caused,in connection with the use of,or on the reliance of its product or related services.Terms and conditions of the website are applicable.Copyrights &copy; 2016 Prudent Corporate Advisory Services Ltd.
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 txt-center">
+      <span class="pruit-text"><small>Designed &amp; Developed by</small></span>
+      <img src="../../assets/img/pru_it_right_logo.png" alt="PruIT logo" class="pruit-logo" />
+    </div>
+  </div>
+</div>
+<!--Footer End-->

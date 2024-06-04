@@ -1,0 +1,12 @@
+
+.for-navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  height: 96px;
+  align-items: center;
+}
+
+.fund-logo {
+  width: 260px;
+  height: 56px;
+}

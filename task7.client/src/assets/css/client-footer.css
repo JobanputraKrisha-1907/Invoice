@@ -1,0 +1,33 @@
+
+.for-flex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left:100px;
+  /* margin-top: 15px;*/
+}
+
+.footer {
+  bottom: 0;
+ /* position: fixed;*/
+  color: black;
+  background-color: white;
+  padding: 20px 0;
+}
+
+  .footer p {
+    margin: 0;
+  }
+
+.pruit-text {
+  font-size: 10px;
+}
+
+.pruit-logo {
+  margin-left: 10px;
+  height: 40px;
+}
+
+.txt-center {
+  text-align: center;
+}

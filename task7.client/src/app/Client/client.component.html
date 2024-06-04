@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+<!--Header Start-->
+<div class="container for-navbar-flex header">
+  <div>
+    <img src="../../assets/img/prudent_footer_left_logo.png" alt="Prudent logo" />
+  </div>
+
+</div>
+<!--Header End-->
+
+<!-- Sidebar Start -->
+
+
+<div class="container-fluid p-0 d-flex h-100">
+  
+    <div class="sidebar">
+      <h2>Menu</h2>
+      <ul class="list-unstyled components">
+
+        <li class="nav-item mb-1">
+          <a routerLink="/Client/Dashboard">
+            <i class="fa-solid fa-house"></i>
+            DashBoard
+          </a>
+        </li>
+
+        <li class="nav-item mb-1">
+          <a routerLink="/Client/Invoice">
+            <i class="fa-regular fa-calendar-days"></i>
+            Entry Form
+          </a>
+        </li>
+
+        <li class="nav-item mb-1">
+          <a routerLink="/Client/Dashboard" (click)="logOut()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Log Out
+          </a>
+        </li>
+
+
+      </ul>
+      </div>
+    </div>
+
+    <div class="bg-light flex-fill">
+      <div class="p-2 d-md-none d-flex text-white nav-color">
+        <a href="#" class="text-white"
+           data-bs-toggle="offcanvas"
+           data-bs-target="#bdSidebar">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+ 
+
+
+<!-- Sidebar End -->
+<!--Footer Start-->
+<div class="container-fluid for-flex footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-2">
+        <p>Terms & Conditions</p>
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <p>Privacy Policy</p>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <p>All Rights Reserved to Prudent Corporate Advisory Services Ltd.</p>
+      </div>
+
+      <div class="col-lg-2 col-md-2">
+        <span class="pruit-text"><small>Designed &amp; Developed by</small></span>
+        <img src="../../assets/img/pru_it_right_logo.png" alt="PruIT logo" class="pruit-logo" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer End-->

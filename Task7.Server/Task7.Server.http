@@ -1,0 +1,26 @@
+@Task7.Server_HostAddress = http://localhost:5118
+
+GET {{Task7.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{Task7.Server_HostAddress}}/Login/
+Accept: application/json
+
+###
+
+GET {{Task7.Server_HostAddress}}/Customer/
+Accept: application/json
+
+###
+
+GET {{Task7.Server_HostAddress}}/Product/
+Accept: application/json
+
+###
+
+GET {{Task7.Server_HostAddress}}/Invoice/
+Accept: application/json
+
+###
